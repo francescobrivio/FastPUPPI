@@ -318,7 +318,7 @@ def addTkPtCut(ptCut):
 
 
 def addGen(pdgs):
-    genLepTable = cms.EDProducer("SimpleCandidateFlatTableProducer",
+    genLepTable = cms.EDProducer("SimpleGenParticleFlatTableProducer",
                 src = cms.InputTag("genParticles"),
                 doc = cms.string("gen leptons"),
                 singleton = cms.bool(False), # the number of entries is variable
